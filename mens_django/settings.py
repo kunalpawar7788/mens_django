@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STRIPE_SECRET_KEY = 'sk_test_tR3PYbcVNZZ796tH88S4VQ2u'
 
 # Application definition
 
@@ -43,7 +44,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'djoser',
-    'product'
+    'product',
+    'order'
 ]
 
 # Manually added
