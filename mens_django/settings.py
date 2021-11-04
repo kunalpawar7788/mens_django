@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_fq36$pl+@si_6u8y4fb*2k9s+o%fun+&4jii!h4-ev5ujhv_@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 STRIPE_SECRET_KEY = 'sk_test_tR3PYbcVNZZ796tH88S4VQ2u'
 
@@ -97,7 +97,16 @@ DATABASES = {
     }
 }
 
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'mens',
+#         'USER': 'mens_user',
+#         'PASSWORD': 'password',
+#         'HOST': 'localhost',
+#         'PORT': '8080',
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
